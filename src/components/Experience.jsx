@@ -3,10 +3,11 @@ import html from '../assets/html.png'
 import css from '../assets/css.png'
 import javascript from '../assets/javascript.png'
 import reactimage from '../assets/react.png'
-import nextjs from '../assets/nextjs.png'
-import graphql from '../assets/graphql.png'
 import github from '../assets/github.png'
 import tailwind from '../assets/tailwind.png'
+import nodejs from '../assets/nodejs.png'
+import cpp from '../assets/cpp.png'
+import mongodb from '../assets/mongodb.png'
 
 const Experience = () => {
 
@@ -43,15 +44,15 @@ const Experience = () => {
         },
         {
             id: 6,
-            src: nextjs,
-            title: 'NextJS',
-            style: 'shadow-white',
+            src: nodejs,
+            title: 'NodeJS',
+            style: ' shadow-green-400',
         },
         {
             id: 7,
-            src: graphql,
-            title: 'GraphQL',
-            style: 'shadow-pink-500',
+            src: mongodb,
+            title: 'MongoDB',
+            style: 'shadow-green-600',
         },
         {
             id: 8,
@@ -59,10 +60,16 @@ const Experience = () => {
             title: 'GitHub',
             style: 'shadow-gray-500',
         },
+        {
+            id: 9,
+            src: cpp,
+            title: 'C++',
+            style: 'shadow-blue-500',
+        },
     ]
 
   return (
-    <div name="experience" className='bg-gradient-to-b from-black to-gray-800 w-full h-screen'>
+    <div name="experience" className='bg-gradient-to-b from-gray-800 to-black w-full h-screen'>
         <div className=' max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
             <div>
                 <p className=' text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>Experience</p>
