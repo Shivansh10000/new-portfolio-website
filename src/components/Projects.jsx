@@ -1,8 +1,8 @@
 import React from "react";
-import foodsite from "../assets/portfolio/foodsite.png"
-import pokersite from "../assets/portfolio/pokersite.png"
-import djangoml from "../assets/portfolio/djangoml.png"
-import reactportfolio from "../assets/portfolio/reactportfolio.png"
+import foodsite from "../assets/portfolio/foodsite.png";
+import pokersite from "../assets/portfolio/pokersite.png";
+import djangoml from "../assets/portfolio/djangoml.png";
+import reactportfolio from "../assets/portfolio/reactportfolio.png";
 
 const Projects = () => {
   const portfolios = [
@@ -31,9 +31,9 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
@@ -41,7 +41,7 @@ const Projects = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 px-5 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-5 sm:px-0">
           {portfolios.map(({ id, src, href }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
@@ -52,11 +52,13 @@ const Projects = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-2 py-2 m-1 duration-200 hover:scale-105">
-                  Code Link :
+                <button className="w-full px-2 py-2 m-1 duration-200 hover:scale-105">
+                  Code Link:
                 </button>
-                <button className="w-1/2 px-2 py-2 m-1 duration-200 hover:scale-105">
-                  <a href={href} target='_blank' rel="noreferrer">Link</a>
+                <button className="w-full px-2 py-2 m-1 duration-200 hover:scale-105">
+                  <a href={href} target="_blank" rel="noreferrer">
+                    Link
+                  </a>
                 </button>
               </div>
             </div>
