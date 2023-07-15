@@ -1,30 +1,34 @@
 import React from "react";
 import foodsite from "../assets/portfolio/foodsite.png";
 import pokersite from "../assets/portfolio/pokersite.png";
-import djangoml from "../assets/portfolio/djangoml.png";
+import techinfo from "../assets/portfolio/techinfo.png";
 import reactportfolio from "../assets/portfolio/reactportfolio.png";
 
 const Projects = () => {
   const portfolios = [
     {
       id: 1,
-      src: foodsite,
-      href: "https://github.com/Shivansh10000/Food-Delivery-Website",
+      src: techinfo,
+      href: "https://github.com/Shivansh10000/blog-website-backend",
+      href2: "https://techinfowebsite.netlify.app/",
     },
     {
       id: 2,
-      src: pokersite,
-      href: "https://github.com/Shivansh10000/Poker-Game-Website",
+      src: reactportfolio,
+      href: "https://github.com/Shivansh10000/new-portfolio-website",
+      href2: "https://shivansh-joshi.netlify.app/",
     },
     {
       id: 3,
-      src: djangoml,
-      href: "https://github.com/Shivansh10000/flower_recognition_website",
+      src: pokersite,
+      href: "https://github.com/Shivansh10000/Poker-Game-Website",
+      href2: "",
     },
     {
       id: 4,
-      src: reactportfolio,
-      href: "https://github.com/Shivansh10000/new-portfolio-website",
+      src: foodsite,
+      href: "https://github.com/Shivansh10000/Food-Delivery-Website",
+      href2: "",
     },
   ];
 
@@ -42,7 +46,7 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-5 sm:px-0">
-          {portfolios.map(({ id, src, href }) => (
+          {portfolios.map(({ id, src, href, href2 }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -53,13 +57,17 @@ const Projects = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-full px-2 py-2 m-1 duration-200 hover:scale-105">
-                  Code Link:
-                </button>
-                <button className="w-full px-2 py-2 m-1 duration-200 hover:scale-105">
                   <a href={href} target="_blank" rel="noreferrer">
-                    Link
+                    Code Link
                   </a>
                 </button>
+                {href2 !== "" && (
+                  <button className="w-full px-2 py-2 m-1 duration-200 hover:scale-105">
+                    <a href={href2} target="_blank" rel="noreferrer">
+                      Live Site
+                    </a>
+                  </button>
+                )}
               </div>
             </div>
           ))}
