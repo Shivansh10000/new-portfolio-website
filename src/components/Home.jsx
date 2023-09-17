@@ -11,13 +11,14 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full max-w-lg text-center md:text-left">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm a Full Stack Developer
+          <h2 className="text-4xl sm:text-6xl font-bold text-white">
+            Hi ! My Name is Shivansh Joshi
           </h2>
-          <p className="text-gray-500 py-4">
-            I like to design and build software. Currently, I love to work on
-            web applications using technologies like React, Tailwind, Node, and
-            Express.
+          <p className="text-gray-300 py-4">
+            I like to design and build software. I like to work on web
+            applications using technologies like React, Tailwind, Node, and
+            Express and I have recently started using Generative AI for my
+            projects.
           </p>
 
           <div>
